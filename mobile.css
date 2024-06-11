@@ -1,0 +1,83 @@
+@media screen and (max-width: 1000px) {
+    body{
+        padding: 0 20px;
+        
+    }
+    h1{
+        text-align: center;
+    }
+    .contentWrap{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    
+    .content{
+        width: 100%;
+
+        flex-direction: column;
+        padding-top: 5px;
+    }
+    .main{
+        width: unset;
+    }
+    .chartWrap{
+
+        flex-direction: column;
+    }
+    .radioWrap{
+        flex-direction: column;
+    }
+    .radioWrap>div{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    select{
+        height: 30px;
+    }
+    .tgtWrap select{
+        align-self: flex-end;
+        margin-bottom: 10px;
+    }
+    .tgtWrap .chatHeader{
+        margin-bottom: 70px;
+    }
+    .tgtWrap .basChatTitle{
+        top: calc(100% + 30px);
+    }
+    .tableHeader{
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+    .tableHeader div{
+        margin: 0 10px;
+    }
+    th{
+        padding: 10px 5px;
+    }
+    .barWrap{
+        width: 100%;
+        height: 138px;
+        margin-top: 30px;
+        position: relative;
+    }
+    .bar{
+        height: 100px;
+    }
+    .logoWrap{
+        bottom: 0px;
+        top: unset!important;
+        height: 150px;
+        zoom: 0.6;
+    }
+    .barWrap .footerText{
+        position: absolute;
+        bottom: 0;
+    }
+    .text, .marginText{
+        width: 100%;
+        box-sizing: border-box;
+    }   
+    
+}

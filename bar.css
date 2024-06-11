@@ -1,0 +1,139 @@
+.bar{
+    /* height: 100px; */
+    width: 90px;
+    display: none;
+    flex-direction: column;
+    
+}
+.part1{
+    flex: 1;
+    background: rgba(117, 222, 137, 0.8);
+    position: relative;
+}
+.part1::before{
+    height: 20px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    border-radius: 50%;
+    background: rgba(117, 222, 137);
+    content: '';
+}
+.part1::after{
+    height: 20px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    border-radius: 50%;
+    background: rgba(117, 222, 137, 0.8);
+    content: '';
+    z-index: 4;
+}
+.part2{
+    flex: 1;
+    background: rgba(250, 153, 152, 0.8);
+    position: relative;
+}
+.part2::before{
+    height: 20px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    border-radius: 50%;
+    background: rgba(250, 153, 152);
+    content: '';
+}
+.part2::after{
+    height: 20px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    border-radius: 50%;
+    background: rgba(250, 153, 152, 0.8);
+    content: '';
+    z-index:3;
+}
+
+.part3{
+    flex: 0.5;
+    background: rgba(252, 190, 111, 0.8);
+    position: relative;
+}
+.part3::before{
+    height: 20px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    border-radius: 50%;
+    background: rgb(252, 190, 111);
+    content: '';
+}
+.part3::after{
+    height: 20px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    border-radius: 50%;
+    background: rgba(252, 190, 111, 0.8);
+    content: '';
+    z-index: 2;
+}
+
+.part4{
+    flex: 0.5;
+    background: rgba(165, 205, 266, 0.8);
+    position: relative;
+}
+.part4::before{
+    height: 20px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    border-radius: 50%;
+    background: rgb(165, 205, 266);
+    content: '';
+}
+.part4::after{
+    height: 20px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    border-radius: 50%;
+    background: rgba(165, 205, 266, 0.8);
+    content: '';
+    z-index: 1;
+}
+
+.part5{
+    flex: 0.5;
+    background: rgba(201, 177, 213);
+    position: relative;
+}
+.part5::before{
+    height: 20px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    border-radius: 50%;
+    background: rgb(201, 177, 213);
+    content: '';
+}
+.part5::after{
+    height: 20px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    border-radius: 50%;
+    background: rgba(201, 177, 213);
+    content: '';
+}

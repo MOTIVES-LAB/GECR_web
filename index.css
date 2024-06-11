@@ -1,0 +1,298 @@
+
+html, body{
+    height: 100%;
+    font-family:"Century Gothic";
+    text-align: justify;
+    font-size: small;
+}
+h1{
+    font-weight: normal;
+    font-size: xx-large;
+    /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+p{
+    margin: 0;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contentWrap{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.text, .marginText{
+    /* border: 1px solid red; */
+    margin-top: 30px;
+    padding: 10px;
+    /* width: calc(100% - 100px); */
+    width: 100%;
+}
+
+.marginText a{
+    
+    margin: 0 5px;
+}
+.main{
+    width: 1000px;
+}
+.barWrap{
+    align-self: flex-end;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width:100%;
+}
+
+.barWrap .logoWrap{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+}
+.barWrap .logoWrap img{
+    width: 150px;
+    object-fit: cover;   
+}
+
+.barWrap .bar{
+    margin-bottom: 20px;
+}
+
+.BEV_DropDown_Wrap{
+    display: flex;
+    height: 30px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.BEV_DropDown_Wrap .BEV_DropDown{
+    flex: 1;
+    margin-left: 20px;
+    height: 100%;
+    font-size: larger;
+    font-family: "Century Gothic";
+}
+
+
+.desc{
+    font-size: 14px;
+}
+.chartWrap{
+    display: flex;
+}
+.basCYC_plot,
+.tgtCYC_plot {
+    width: 100%;
+}
+#basChat,
+#tgtChat {
+    height: 200px;
+    width: 100%;
+}
+
+
+.basWrap, .tgtWrap{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.basWrap{
+    margin-right: 20px;
+}
+
+.chartWrap .header{
+    display: flex;
+}
+
+.chartWrap .radioWrap{
+    display: flex;
+    flex: 1;
+    font-size: larger;
+}
+.chartWrap .radioWrap>div{
+    margin-right: 10px;
+}
+
+.bas_DropDown, .tgtCYC_DropDown{
+    flex: 1;
+    font-family:"Century Gothic";
+    font-size: larger;
+}
+
+
+.chatHeader{
+    position: relative;
+    width: 100%;
+    height: 70px;
+}
+.TgtCYC_Slider{
+    height: 50px;
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 20px;
+    
+}
+.basChatTitle{
+    color: #00a99d;
+    font-weight: bold;   
+}
+.chatHeader .basChatTitle{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+.TgtCYC_Slider .dragWrap {
+    height: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TgtCYC_Slider .line{
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.TgtCYC_Slider .dragBtn{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: -5px;
+    transform: translateY(-50%);
+    height: 14px;
+    width: 10px;
+    background: #000;
+    clip-path: polygon(0 0, 100% 0, 100% 6px, 5px 100%, 0 6px);
+}
+.TgtCYC_Slider .dragBtn::after{
+    position: absolute;
+    height: 12px;
+    width: 8px;
+    background: #fff;
+    clip-path: polygon(0 0, 100% 0, 100% 5px, 4px 100%, 0 5px);
+    content: '';
+    top: 1px;
+    left: 1px;
+}
+.TgtCYC_Slider .ticks{
+    display: flex;
+    justify-content: space-between;
+}
+.TgtCYC_Slider .ticks>div {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.TgtCYC_Slider .tick{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+.TgtCYC_Slider .tick i{
+    height: 100%;
+    width: 1px;
+    background: rgba(0, 0, 0, 0.2);
+
+}
+.TgtCYC_Slider .num{
+    font-size: 12px;
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(0, 0, 0, 0.2);
+}
+
+#Est_Button{
+    width: 100%;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(30, 30, 30, 0.7);
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: -15px;
+    font-size: x-large;
+}
+#Est_Button:hover{
+    box-shadow: 1px 1px 2px 2px #769ee1;
+}
+
+
+.tableHeader{
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 10px 20px 10px 0%;
+    font-weight:bold;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    /* font-family:Calibri; */
+    /* font-family:'Franklin Gothic Medium'; */
+    font-size:large;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: larger;
+    font-weight:lighter;
+}
+table tr:nth-child(even){
+    background: rgba(0, 0, 0, 0.05);
+}
+table th{
+    border: 1px solid rgb(160 160 160);
+    text-align: left;
+    background: rgba(0, 0, 0, 0.05);
+}
+table .num{
+    width: 150px;
+    text-align: center;
+    background: transparent;
+}
+
+.footerText{
+    /* font-weight: bold; */
+    /* text-align: right; */
+    display: flex;
+    /* justify-content: space-between;
+    padding: 10px 20px 10px 0%; */
+    
+    margin-top: 10px;
+    font-size: larger;
+    /* min-width: 105px; */
+    /* transform: translateX(-6px); */
+}
+.inline_blocks{
+    display: inline-block;
+}
+.ECR{
+    text-align: right;
+    line-height: 35px;;
+    font-size: 24px;
+    display: inline-block;
+}
+.label{
+    font-size:x-large;
+}
