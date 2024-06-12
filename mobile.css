@@ -61,6 +61,7 @@
         /* height: 138px; */
         margin-top: 30px;
         position: relative;
+        min-height: 150px;
     }
     .bar{
         height: 100px;
