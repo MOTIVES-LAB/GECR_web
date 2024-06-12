@@ -24,6 +24,20 @@
     <script src="./data/WLTC.js"></script>
 </head>
 <body>
+    <style>
+        @font-face {
+            font-family: "Century Gothic";
+            font-style:normal;
+            font-weight: normal;
+            src:    url("./font/GOTHIC.TTF");
+        }
+        @font-face {
+            font-family: "Century Gothic";
+            font-style:normal;
+            font-weight: bold;
+            src:    url("./font/GOTHICB.TTF");
+        }
+    </style>
     <div class="box">
         <h1>Battery Electric Vehicle Energy Consumption Estimator</h1>
         <div class="contentWrap">
@@ -97,8 +111,7 @@
                                 </div>
                                 <div class="basChatTitle" id="tgtChatTitle"></div>
                             </div>
-                            <div class="tgtCYC_plot">
-                                
+                            <div class="tgtCYC_plot">                               
                                 <div id="tgtChat"></div>
                             </div>
                         </div>
@@ -151,7 +164,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <div  class="footerText">
+                    <!-- <div  class="footerText">
                         <div class="inline_blocks;" style="width: 280px;text-align: right;">Estimated Total ECR of <br><b>base driving cycle</b></div>
                         <div class="inline_blocks;" style="width: 20px;"></div>
                         <span  style="width: 80px;" class="ECR" id="ECR_CLTC"></span>
@@ -160,7 +173,15 @@
                         <div class="inline_blocks;" style="width: 20px;"></div>
                         <span  style="width: 80px;" class="ECR" id="ECR_Tgt"></span>
                         <div class="inline_blocks;" style="width: 60px;">Wh/km</div>
-                        <!-- <span class="footerText" id="ECR_Tgt">Wh/km</span> -->
+                    </div> -->
+                    <div class="ECR_container">
+                        <div class="ECR_item_title" id="ECR_item1">Estimated Total ECR of <b>base driving cycle</b></div>
+                        <span class="ECR_item_value" id="ECR_CLTC"></span>
+                        <div class="ECR_item_unit" id="ECR_item3">Wh/km</div>
+                        <div class="ECR_item_unit" id="ECR_item4"></div>
+                        <div class="ECR_item_title" id="ECR_item5">Estimated Total ECR of <b>target driving cycle</b></div>
+                        <span class="ECR_item_value" id="ECR_Tgt"></span>
+                        <div class="ECR_item_unit" id="ECR_item7">Wh/km</div>
                     </div>
                     <!-- <div class="footerText">Estimated Total ECR of target driving cycle:</div> -->
                 </div>
@@ -202,19 +223,6 @@
         By downloading or using this software, you signify your agreement to these terms. -->
     </div>
     <script src="./index.js"></script>
-    <style>
-        @font-face {
-            font-family: "Century Gothic";
-            font-style:normal;
-            font-weight: normal;
-            src:    url("./font/GOTHIC.TTF");
-        }
-        @font-face {
-            font-family: "Century Gothic";
-            font-style:normal;
-            font-weight: bold;
-            src:    url("./font/GOTHICB.TTF");
-        }
-    </style>
+    
 </body>
 </html>

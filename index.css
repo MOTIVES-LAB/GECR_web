@@ -272,17 +272,14 @@ table .num{
     background: transparent;
 }
 
-.footerText{
-    /* font-weight: bold; */
-    /* text-align: right; */
+/* .footerText{
+
     display: flex;
-    /* justify-content: space-between;
-    padding: 10px 20px 10px 0%; */
+
     
     margin-top: 10px;
     font-size: larger;
-    /* min-width: 105px; */
-    /* transform: translateX(-6px); */
+
 }
 .inline_blocks{
     display: inline-block;
@@ -292,7 +289,60 @@ table .num{
     line-height: 35px;;
     font-size: 24px;
     display: inline-block;
-}
+} */
 .label{
     font-size:x-large;
 }
+.ECR_container {
+    display: grid;
+    /* 间距会通过个别项目的 margin 设置，gap 设置为0 */
+    gap: 0;
+}
+
+/* 默认布局 - 单行，设置每个元素的不同宽度和间距 */
+.ECR_container {
+    /* 使用 grid-template-columns 设定每个元素的宽度 */
+    grid-template-columns: 
+        25% /* 宽度为100px的第1项 */
+        12% /* 宽度为150px的第2项 */
+        7% /* 宽度为200px的第3项 */
+        13% /* 宽度为200px的第3项 */
+        25% /* 宽度为120px的第4项 */
+        12% /* 宽度为180px的第5项 */
+        7%; /* 宽度为160px的第6项 */
+}
+.ECR_item_title{
+    font-size: larger;
+    text-align: right;
+}
+.ECR_item_value{
+    font-size: xx-large;
+    text-align: right;
+}
+.ECR_item_unit{
+    font-size: larger;
+    text-align: left;
+}
+
+#ECR_item1 {
+    margin-left: 15%; 
+}
+#ECR_item5 {
+    margin-left: 15%; 
+}
+/* 设置每个元素的手动间距 (margin)
+#item1 {
+    margin-right: 10px; 
+}
+#item2 {
+    margin-right: 10px; 
+}
+#item3 {
+    margin-right: 0; 
+}
+#item4 {
+    margin-right: 10px; 
+}
+#item5 {
+    margin-right: 10px;  
+}第5项与第6项的间距 */
