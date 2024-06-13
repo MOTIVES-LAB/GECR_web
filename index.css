@@ -226,18 +226,51 @@ p{
 #Est_Button{
     width: 100%;
     height: 32px;
-    display: flex;
+    display:inline-flex;
+    border: none;
     justify-content: center;
     align-items: center;
-    background: rgba(30, 30, 30, 0.7);
-    color: #fff;
-    border-radius: 6px;
+    background: rgba(219, 218, 218, 0.7);
+    color: #000000;
+    transition: all 0.5s;
     cursor: pointer;
     margin-top: -15px;
-    font-size: x-large;
+    font-size: large;
+    font-weight: bold; 
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,0.2), 0 3px 10px 0 rgba(0,0,0,0.19);
 }
+
+#Est_Button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+#Est_Button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+#Est_Button:hover span {
+    padding-right: 25px;
+  }
+  
+#Est_Button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
 #Est_Button:hover{
-    box-shadow: 1px 1px 2px 2px #769ee1;
+    box-shadow: 0 0px 3px 0 rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.19);
+}
+
+#Est_Button:active {
+    background-color: #00a99d; /* 点击后的颜色 */
 }
 
 
@@ -265,6 +298,7 @@ table th{
     border: 1px solid rgb(160 160 160);
     text-align: left;
     background: rgba(0, 0, 0, 0.05);
+    font-weight: normal;
 }
 table .num{
     width: 150px;

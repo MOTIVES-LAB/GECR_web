@@ -38,8 +38,22 @@
             src:    url("./font/GOTHICB.TTF");
         }
     </style>
+    <style>
+        .mobile-warning {
+            display: none; 
+            background-color: #f0eccc;
+            color: #000;
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 1000;
+        }
+    </style>
     <div class="box">
         <h1>Battery Electric Vehicle Energy Consumption Estimator</h1>
+        <div class="mobile-warning" id="mobileWarning" style="color: red;">It is recommended to use a device with a horizontal resolution  of 1200 px or higher.</div>
         <div class="contentWrap">
             <div class="content">
                 <div class="main">
@@ -116,7 +130,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="Est_Button">Estimate</div>
+                    <button id="Est_Button"><span>Estimate </span></button>
                     <div class="tableHeader">
                         <div style="width: 350px;">GECRs [Wh/km]</div>
                         <div STYLE="width: 84px;">×</div>

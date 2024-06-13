@@ -251,7 +251,8 @@ let BaseCYC_init = (title, data) => {
         // },
         grid: {
             top: 20,
-            right: 0
+            right: 0,
+            left: 50
         },
         xAxis: {
             name: 'Time[s]',
@@ -315,7 +316,8 @@ let TargetCYC_init = (title, data, constSpeed) => {
         // },
         grid: {
             top: 20,
-            right: 0
+            right: 0,
+            left: 50
         },
         xAxis: {
             name: 'Time[s]',
@@ -536,7 +538,21 @@ function setTgtChatTitle(value) {
     
 }
 
+function checkViewport() {
+    const warningElement = document.getElementById('mobileWarning');
+    if (window.innerWidth < 1200) { // 如果视口宽度小于 768 像素
+        warningElement.style.display = 'block'; // 显示提示框
+    } else {
+        warningElement.style.display = 'none'; // 隐藏提示框
+    }
+}
 
+
+// 初次加载时检测视口宽度
+checkViewport();
+
+// 当窗口大小改变时重新检测视口宽度
+window.onresize = checkViewport;
 
 
 createTicks()
